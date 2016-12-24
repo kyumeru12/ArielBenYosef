@@ -20,7 +20,7 @@ this code is for the 4 days shulmann robot challenge.
 -------
  - Throwing system - Yuval & Dor
  - Collecting system - Doron & Bohaddadna
- - Drive system - lanna
+ - Drive system - lana
 
  **Robot spefiction:**
 -------
