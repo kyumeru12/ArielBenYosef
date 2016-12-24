@@ -6,6 +6,13 @@ this code is for the 4 days shulmann robot challenge.
 ----------
 ![The field](https://s30.postimg.org/rxcem6lhd/ndfgjdfdghj.png)
 
-points:
-autonomous part:h.
+**points:**
+-------
+**autonomous part:**
+ - High target - 4 pt
+ - Low part - 2pt
+ **driver part:**
+ - High target - 4 pt
+ - Low part - 2pt
+
 
