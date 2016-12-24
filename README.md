@@ -20,5 +20,5 @@ the field:
 -------------|---|
 
 points:
-autonomous part:h
+autonomous part:h.
 
