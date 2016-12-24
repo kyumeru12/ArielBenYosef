@@ -15,10 +15,14 @@ this code is for the 4 days shulmann robot challenge.
  **driver part:**
  - High target - 4 pt
  - Low part - 2pt
- 
  **teams:**
 -------
  - Throwing system - Yuval & Dor
  - Collecting system - Doron & Bohaddadna
  - Drive system - lanna
 
+ **Robot spefiction:**
+-------
+
+ - Drive System - Tank drive
+ 
