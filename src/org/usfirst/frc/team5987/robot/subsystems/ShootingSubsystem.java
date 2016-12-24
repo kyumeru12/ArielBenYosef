@@ -7,7 +7,7 @@ import edu.wpi.first.wpilibj.Victor;
 public class ShootingSubsystem {
 	static DigitalInput reciever = new DigitalInput(0);
 	static Victor spinMotor = new Victor(2);
-	static Victor angleMotor = new Victor(3);
+	static Victor angleMotor = new Victor(3); //todo delet
 	static Servo doorControl = new Servo(4);
 	
 	public static boolean isBall(){
