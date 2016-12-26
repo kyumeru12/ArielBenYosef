@@ -4,9 +4,15 @@ package org.usfirst.frc.team5987.robot;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
+import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import org.usfirst.frc.team5987.robot.commands.ExampleCommand;
+import org.usfirst.frc.team5987.robot.subsystems.DrivingSubsystem;
 import org.usfirst.frc.team5987.robot.subsystems.ExampleSubsystem;
+import org.usfirst.frc.team5987.robot.subsystems.NetworkTablesSubsystem;
+import org.usfirst.frc.team5987.robot.subsystems.PickerSubsystem;
+import org.usfirst.frc.team5987.robot.subsystems.ShootingMechanismSubsystem;
+
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
@@ -20,6 +26,11 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 public class Robot extends IterativeRobot {
 
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
+	public static final DrivingSubsystem drivingSubsytem = new DrivingSubsystem();
+	public static final PickerSubsystem pickerSubsystem = new PickerSubsystem();
+	public static final ShootingMechanismSubsystem shootingMechanismSubsystem = new ShootingMechanismSubsystem();
+	public static final NetworkTablesSubsystem networkTablesSubsystem = new NetworkTablesSubsystem ();
+	
 	public static OI oi;
 
     Command autonomousCommand;

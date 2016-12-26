@@ -1,5 +1,6 @@
 package org.usfirst.frc.team5987.robot.commands;
 
+import org.usfirst.frc.team5987.robot.Robot;
 import org.usfirst.frc.team5987.robot.subsystems.PickerSubsystem;
 
 import edu.wpi.first.wpilibj.command.Command;
@@ -9,18 +10,20 @@ import edu.wpi.first.wpilibj.command.Command;
  */
 public class PickCommand extends Command {
 
-    public PickCommand() {
-        // Use requires() here to declare subsystem dependencies
-        // eg. requires(chassis);
-    }
+	private double speed;
 
+    public PickCommand(double speed)
+    {
+    	requires(Robot.pickerSubsystem);
+    	this.speed = speed;
+    }
     // Called just before this Command runs the first time
     protected void initialize() {
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	PickerSubsystem.rotate(1);
+    	PickerSubsystem.rotate(speed);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -35,6 +38,6 @@ public class PickCommand extends Command {
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
-    	PickerSubsystem.rotate(0);
+    	cancel();
     }
 }
