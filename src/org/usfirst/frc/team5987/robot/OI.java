@@ -38,8 +38,18 @@ public class OI {
 	
 	public static  Joystick left = new Joystick(0);
 	public static Joystick right = new Joystick(1);
-	public static Joystick xbox = new Joystick(2);
+	public static Joystick theCoolJoystick = new Joystick(2);
 	
-	Button shoot =  new JoystickButton(xbox,1);
+	Button doorState = new JoystickButton(theCoolJoystick, 0);
+	Button wantedSpeed = new JoystickButton(theCoolJoystick, 1);
+	Button picker = new JoystickButton(theCoolJoystick, 2);
+	Button rotate = new JoystickButton(theCoolJoystick, 3);
+	Button shoot = new JoystickButton(theCoolJoystick, 4);
+	
+	doorState.whenPressed(new ChangeDoorState());
+	wantedSpeed.whenPressed(new ChangeToWantedSpeedCommand());
+	picker.whenPressed(new PickCommand(0.5));
+	rotate.whenPressed(new rotateCommand());
+	shoot.whenPressed(new Shoot());
 }
 
